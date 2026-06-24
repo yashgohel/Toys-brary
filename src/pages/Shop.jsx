@@ -17,6 +17,7 @@ export default function Shop({ onAddToCart, authToken }) {
   const [wishlist, setWishlist] = useState({});
   const [allProducts, setAllProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
   // Fetch products from backend
   useEffect(() => {
@@ -180,8 +181,17 @@ export default function Shop({ onAddToCart, authToken }) {
       </div>
 
       <div className="shop-layout">
+        {/* Mobile Filter Toggle Button */}
+        <button 
+          className="mobile-filter-toggle"
+          onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
+        >
+          <SlidersHorizontal size={18} />
+          {isMobileFiltersOpen ? 'Hide Filters' : 'Show Filters'}
+        </button>
+
         {/* Sidebar Filters */}
-        <aside className="shop-sidebar">
+        <aside className={`shop-sidebar ${isMobileFiltersOpen ? 'mobile-open' : ''}`}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '18px' }}>
               <SlidersHorizontal size={18} /> Filters

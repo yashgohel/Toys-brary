@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Search, User, ShoppingCart, Heart } from 'lucide-react';
+import { Search, User, ShoppingCart, Heart, Menu, X } from 'lucide-react';
 import logoImg from '../assets/logo.png';
 import { API_URL } from '../config';
 
@@ -10,6 +10,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [allProducts, setAllProducts] = useState([]);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const searchContainerRef = useRef(null);
   const navigate = useNavigate();
 
@@ -88,8 +89,17 @@ export default function Navbar({ cartCount = 0, authToken }) {
           <img src={logoImg} alt="Toys-brary" className="logo-img" />
         </Link>
 
+        {/* Mobile Menu Toggle */}
+        <button 
+          className="mobile-menu-toggle"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle Menu"
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
         {/* Navigation Links */}
-        <nav>
+        <nav className={`nav-wrapper ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul className="nav-menu">
             <li>
               <NavLink 
