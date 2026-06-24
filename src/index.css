@@ -1619,6 +1619,14 @@ button {
     margin-top: 16px;
   }
 
+  .age-group-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .categories-page-wrapper {
+    padding: 60px 20px 100px;
+  }
+
   .footer-top {
     grid-template-columns: 1fr;
   }
