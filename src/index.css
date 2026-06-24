@@ -1543,7 +1543,8 @@ button {
   .mobile-menu-toggle {
     display: flex;
     order: 1;
-    width: 60px; /* Balance left/right for center logo */
+    width: 60px;
+    /* Balance left/right for center logo */
     justify-content: flex-start;
   }
 
@@ -1561,7 +1562,8 @@ button {
 
   .header-actions {
     order: 3;
-    width: 60px; /* Balance left/right for center logo */
+    width: 60px;
+    /* Balance left/right for center logo */
     gap: 12px;
     justify-content: flex-end;
   }
@@ -1645,6 +1647,18 @@ button {
 
   .shop-sidebar.mobile-open {
     display: block;
+  }
+
+  .about-hero {
+    padding: 0 28px;
+  }
+
+  .shop-page-wrapper {
+    padding: 40px 20px 80px;
+  }
+
+  .contact-page-wrapper {
+    padding: 60px 20px 100px;
   }
 }
 
