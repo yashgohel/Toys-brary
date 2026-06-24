@@ -412,16 +412,18 @@ button {
 }
 
 .hero-graphic-area {
-  right: 30px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 40px 0;
 }
 
 .hero-circle-bg {
-  width: 440px;
-  height: 440px;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1 / 1;
   background-color: var(--bg-cream-dark);
   border-radius: 50%;
   position: absolute;
@@ -1576,6 +1578,8 @@ button {
 
   .search-bar-container {
     max-width: 100%;
+    width: 100%;
+    flex-basis: 100%;
     order: 5;
     margin-top: 16px;
   }
