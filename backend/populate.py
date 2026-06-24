@@ -311,6 +311,10 @@ def populate():
         print("Superuser already exists.")
 
     print("Populating Products...")
+    if Product.objects.count() > 0:
+        print("Database already populated. Skipping.")
+        return
+
     for p in products_data:
         Product.objects.update_or_create(
             name=p['name'],
