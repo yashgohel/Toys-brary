@@ -1,4 +1,4 @@
-# Wonder-Toy Marketplace 🧸
+# Toys-brary Marketplace 🧸
 
 A full-stack toy e-commerce platform built with a React (Vite) frontend and a Python Django (REST Framework) backend. 
 
