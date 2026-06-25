@@ -105,6 +105,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
               <NavLink 
                 to="/" 
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </NavLink>
@@ -113,6 +114,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
               <NavLink 
                 to="/categories" 
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Categories
               </NavLink>
@@ -121,6 +123,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
               <NavLink 
                 to="/shop" 
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Shop
               </NavLink>
@@ -129,6 +132,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
               <NavLink 
                 to="/about" 
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 About Us
               </NavLink>
@@ -137,6 +141,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
               <NavLink 
                 to="/contact" 
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </NavLink>
@@ -147,6 +152,7 @@ export default function Navbar({ cartCount = 0, authToken }) {
                   to="/admin/dashboard" 
                   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                   style={{ color: '#e74c3c', fontWeight: 'bold' }}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Admin
                 </NavLink>

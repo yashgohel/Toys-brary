@@ -32,15 +32,15 @@ export default function Home({ onAddToCart, authToken }) {
       fetch(`${API_URL}/api/wishlist/`, {
         headers: { 'Authorization': `Bearer ${authToken}` }
       })
-      .then(res => res.json())
-      .then(data => {
-        const wishlistObj = {};
-        data.forEach(item => {
-          wishlistObj[item.id] = true;
-        });
-        setWishlist(wishlistObj);
-      })
-      .catch(err => console.error(err));
+        .then(res => res.json())
+        .then(data => {
+          const wishlistObj = {};
+          data.forEach(item => {
+            wishlistObj[item.id] = true;
+          });
+          setWishlist(wishlistObj);
+        })
+        .catch(err => console.error(err));
     } else {
       setWishlist({});
     }
@@ -54,7 +54,7 @@ export default function Home({ onAddToCart, authToken }) {
       navigate('/login');
       return;
     }
-    
+
     // Optimistic UI update
     setWishlist(prev => ({
       ...prev,
@@ -334,14 +334,14 @@ export default function Home({ onAddToCart, authToken }) {
                 alt="Gift Box"
                 className="offer-gift-img"
               />
-              <div className="offer-info">
-                <h2 className="offer-title">Special Offer!</h2>
-                <p className="offer-desc">Get up to 20% OFF on selected toys</p>
-                <div style={{ marginTop: '8px' }}>
-                  <Link to="/shop" className="btn btn-primary" style={{ padding: '10px 24px' }}>
-                    Shop Now
-                  </Link>
-                </div>
+            </div>
+            <div className="offer-info">
+              <h2 className="offer-title">Special Offer!</h2>
+              <p className="offer-desc">Get up to 20% OFF on selected toys</p>
+              <div style={{ marginTop: '8px', display: 'contents' }}>
+                <Link to="/shop" className="btn btn-primary" style={{ padding: '10px 24px' }}>
+                  Shop Now
+                </Link>
               </div>
             </div>
 
@@ -352,10 +352,11 @@ export default function Home({ onAddToCart, authToken }) {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Testimonials (What Parents Say) */}
-      <section className="section" style={{ backgroundColor: 'white', paddingTop: 0, paddingBottom: '100px' }}>
+      < section className="section" style={{ backgroundColor: 'white', paddingTop: 0, paddingBottom: '100px' }
+      }>
         <div className="container">
           <div className="section-title-wrapper">
             <h2 className="section-title">What Parents Say</h2>
@@ -382,7 +383,7 @@ export default function Home({ onAddToCart, authToken }) {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
