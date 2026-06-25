@@ -1492,7 +1492,7 @@ button {
   }
 
   .hero-title {
-    font-size: 60px;
+    font-size: 5vw;
   }
 
   .hero-image {
@@ -1537,7 +1537,7 @@ button {
   }
 
   .footer-top {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .shop-layout {
@@ -1623,6 +1623,10 @@ button {
 
   .hero-circle-bg {
     width: 80%;
+  }
+
+  .hero-title {
+    font-size: 10vw;
   }
 
   .hero-content {
