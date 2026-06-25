@@ -67,7 +67,7 @@ export default function OrderHistory({ authToken }) {
                 </div>
                 <div style={{ textAlign: 'right' }}>
                   <div style={{ fontWeight: 'bold', fontSize: '18px', color: 'var(--primary-coral)' }}>
-                    ${Number(order.total_amount).toFixed(2)}
+                    ₹{Number(order.total_amount).toFixed(2)}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '4px', justifyContent: 'flex-end', color: 'var(--text-light)', fontSize: '14px', marginTop: '4px' }}>
                     <Truck size={14} />
@@ -85,7 +85,7 @@ export default function OrderHistory({ authToken }) {
                         <CheckCircle size={16} color="var(--primary-coral)" />
                         <span>{item.quantity} x {item.product_name}</span>
                       </div>
-                      <strong>${Number(item.price).toFixed(2)}</strong>
+                      <strong>₹{Number(item.price).toFixed(2)}</strong>
                     </div>
                   ))}
                 </div>

@@ -92,7 +92,7 @@ export default function Checkout({ cart, setCart, authToken }) {
             </div>
           </div>
           <div style={{ borderTop: '1px solid #eee', paddingTop: '20px', marginTop: '10px' }}>
-            <h3 style={{ margin: '0 0 16px 0' }}>Total: ${total.toFixed(2)}</h3>
+            <h3 style={{ margin: '0 0 16px 0' }}>Total: ₹{total.toFixed(2)}</h3>
             <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '16px' }}>
               Confirm Order
             </button>

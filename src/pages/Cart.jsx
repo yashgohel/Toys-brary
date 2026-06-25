@@ -39,7 +39,7 @@ export default function Cart({ cart, setCart, authToken }) {
                 <img src={item.image} alt={item.name} style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px' }} />
                 <div style={{ marginLeft: '20px', flexGrow: 1 }}>
                   <h4 style={{ margin: '0 0 8px 0' }}>{item.name}</h4>
-                  <p style={{ margin: 0, fontWeight: 'bold', color: 'var(--primary-coral)' }}>${Number(item.price).toFixed(2)}</p>
+                  <p style={{ margin: 0, fontWeight: 'bold', color: 'var(--primary-coral)' }}>₹{Number(item.price).toFixed(2)}</p>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <button onClick={() => handleQuantity(item.id, -1)} style={{ padding: '4px 10px', background: '#f3f4f6', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>-</button>
@@ -56,11 +56,11 @@ export default function Cart({ cart, setCart, authToken }) {
             <h3 style={{ margin: '0 0 24px 0' }}>Order Summary</h3>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
               <span>Subtotal</span>
-              <span>${total.toFixed(2)}</span>
+              <span>₹{total.toFixed(2)}</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '24px', fontWeight: 'bold', fontSize: '20px' }}>
               <span>Total</span>
-              <span>${total.toFixed(2)}</span>
+              <span>₹{total.toFixed(2)}</span>
             </div>
             <button 
               className="btn btn-primary" 

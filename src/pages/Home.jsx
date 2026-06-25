@@ -217,7 +217,7 @@ export default function Home({ onAddToCart, authToken }) {
                     </div>
                   </div>
 
-                  <span className="product-price">${Number(product.price).toFixed(2)}</span>
+                  <span className="product-price">₹{Number(product.price).toFixed(2)}</span>
 
                   <button
                     onClick={() => onAddToCart(product)}
@@ -262,7 +262,7 @@ export default function Home({ onAddToCart, authToken }) {
                 </div>
 
                 <h3 className="product-wide-title">{product.name}</h3>
-                <span className="product-wide-price">${Number(product.price).toFixed(2)}</span>
+                <span className="product-wide-price">₹{Number(product.price).toFixed(2)}</span>
 
                 <button
                   onClick={() => onAddToCart(product)}
@@ -287,7 +287,7 @@ export default function Home({ onAddToCart, authToken }) {
               </div>
               <div className="trust-content">
                 <h4 className="trust-title">Free Delivery</h4>
-                <span className="trust-desc">On Orders Over $49</span>
+                <span className="trust-desc">On Orders Over ₹499</span>
               </div>
             </div>
 

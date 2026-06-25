@@ -163,7 +163,7 @@ export default function AdminDashboard({ authToken }) {
                   <img src={p.image} alt={p.name} style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '4px' }} />
                 </td>
                 <td style={tdStyle}>{p.name}</td>
-                <td style={tdStyle}>${p.price}</td>
+                <td style={tdStyle}>₹{p.price}</td>
                 <td style={tdStyle}>{p.category}</td>
                 <td style={tdStyle}>
                   <button onClick={() => handleEdit(p)} style={editBtnStyle}>Edit</button>

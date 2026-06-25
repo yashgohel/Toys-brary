@@ -11,7 +11,7 @@ export default function Shop({ onAddToCart, authToken }) {
   // States
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedAge, setSelectedAge] = useState('All');
-  const [priceRange, setPriceRange] = useState(40);
+  const [priceRange, setPriceRange] = useState(3000);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('default');
   const [wishlist, setWishlist] = useState({});
@@ -148,7 +148,7 @@ export default function Shop({ onAddToCart, authToken }) {
   const clearFilters = () => {
     setSelectedCategory('All');
     setSelectedAge('All');
-    setPriceRange(40);
+    setPriceRange(3000);
     setSearchQuery('');
     setSortBy('default');
     setSearchParams({});
@@ -273,17 +273,17 @@ export default function Shop({ onAddToCart, authToken }) {
             <h4 className="filter-title">Max Price</h4>
             <input
               type="range"
-              min="10"
-              max="60"
+              min="500"
+              max="5000"
               step="1"
               value={priceRange}
               onChange={(e) => setPriceRange(Number(e.target.value))}
               className="price-range-slider"
             />
             <div className="price-range-labels">
-              <span>$10</span>
-              <strong style={{ color: 'var(--primary-coral)' }}>${priceRange}</strong>
-              <span>$60</span>
+              <span>₹500</span>
+              <strong style={{ color: 'var(--primary-coral)' }}>₹{priceRange}</strong>
+              <span>₹5000</span>
             </div>
           </div>
         </aside>
@@ -342,7 +342,7 @@ export default function Shop({ onAddToCart, authToken }) {
                       </div>
                     </div>
 
-                    <span className="product-price">${Number(product.price).toFixed(2)}</span>
+                    <span className="product-price">₹{Number(product.price).toFixed(2)}</span>
 
                     <button
                       onClick={() => onAddToCart(product)}

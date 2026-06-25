@@ -100,7 +100,7 @@ export default function Wishlist({ authToken, onAddToCart }) {
                   </div>
                 </div>
 
-                <span className="product-price">${Number(product.price).toFixed(2)}</span>
+                <span className="product-price">₹{Number(product.price).toFixed(2)}</span>
 
                 <button 
                   onClick={() => onAddToCart(product)}

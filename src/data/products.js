@@ -45,7 +45,7 @@ export const topSellingRegular = [
     name: 'RC Monster Truck',
     rating: 5,
     reviewsCount: 120,
-    price: 29.99,
+    price: 2499,
     category: 'Remote Control',
     ageGroup: '6-8 Years',
     image: 'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=300&q=80'
@@ -55,7 +55,7 @@ export const topSellingRegular = [
     name: 'Building Block Set',
     rating: 5,
     reviewsCount: 120,
-    price: 29.99,
+    price: 2499,
     category: 'Educational Toys',
     ageGroup: '3-5 Years',
     image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=300&q=80'
@@ -65,7 +65,7 @@ export const topSellingRegular = [
     name: 'Dancing Robot',
     rating: 5,
     reviewsCount: 120,
-    price: 29.99,
+    price: 2499,
     category: 'Action Figures',
     ageGroup: '6-8 Years',
     image: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&w=300&q=80'
@@ -75,7 +75,7 @@ export const topSellingRegular = [
     name: 'Teddy Bear Soft Toys',
     rating: 5,
     reviewsCount: 120,
-    price: 29.99,
+    price: 2499,
     category: 'Baby Toys',
     ageGroup: '0-2 Years',
     image: 'https://images.unsplash.com/photo-1559251606-c623743a6d76?auto=format&fit=crop&w=300&q=80'
@@ -85,7 +85,7 @@ export const topSellingRegular = [
     name: 'Magic Drawing Board',
     rating: 5,
     reviewsCount: 120,
-    price: 29.99,
+    price: 2499,
     category: 'Puzzle Games',
     ageGroup: '3-5 Years',
     image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=300&q=80'
@@ -95,7 +95,7 @@ export const topSellingRegular = [
     name: 'Sport Car (RC)',
     rating: 5,
     reviewsCount: 120,
-    price: 29.99,
+    price: 2499,
     category: 'Remote Control',
     ageGroup: '9-12 Years',
     image: 'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=300&q=80'
@@ -107,7 +107,7 @@ export const topSellingWide = [
   {
     id: 7,
     name: 'Dinosaur World Set',
-    price: 27.99,
+    price: 2299,
     category: 'Educational Toys',
     ageGroup: '3-5 Years',
     image: 'https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=400&q=80'
@@ -115,7 +115,7 @@ export const topSellingWide = [
   {
     id: 8,
     name: 'Musical Drum Set',
-    price: 21.99,
+    price: 1799,
     category: 'Outdoor Toys',
     ageGroup: '6-8 Years',
     image: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=400&q=80'
@@ -123,7 +123,7 @@ export const topSellingWide = [
   {
     id: 9,
     name: 'Baby Activity Walker',
-    price: 27.99,
+    price: 2299,
     category: 'Baby Toys',
     ageGroup: '0-2 Years',
     image: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=400&q=80'
@@ -131,7 +131,7 @@ export const topSellingWide = [
   {
     id: 10,
     name: 'Princess Castle Playset',
-    price: 27.99,
+    price: 2299,
     category: 'Puzzle Games',
     ageGroup: '3-5 Years',
     image: 'https://m.media-amazon.com/images/I/71IfOxkxLnL._AC_UF1000,1000_QL80_.jpg'
