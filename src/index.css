@@ -1627,6 +1627,23 @@ button {
     padding: 60px 20px 100px;
   }
 
+  .categories-grid,
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-section-title-wrapper::before {
+    display: none;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1;
+  }
+
+  .offer-badge {
+    display: none;
+  }
+
   .footer-top {
     grid-template-columns: 1fr;
   }
@@ -1637,9 +1654,7 @@ button {
     text-align: center;
   }
 
-  .shop-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
 
   .form-row {
     grid-template-columns: 1fr;
@@ -1655,6 +1670,10 @@ button {
 
   .shop-sidebar.mobile-open {
     display: block;
+
+    div {
+      margin-bottom: 20px;
+    }
   }
 
   .about-hero {
